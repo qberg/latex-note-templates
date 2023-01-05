@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  IMPORTING THE PACKAGES REQUIRED 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{clrscode3e}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage{tikz}
+\usepackage{amsmath,amsthm}
+\usetikzlibrary{shapes}
+\usetikzlibrary{positioning}
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+%\graphicspath{{../Images}}
+\usepackage{booktabs}
+\usepackage{units}
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+\usepackage{multicol}
+\usepackage{soul}
+
+\usepackage{colour-tufte}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEFINING THE COLOR PALETTE FOR SECTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{secnumdepth}{2}
+\usepackage{xcolor}
+
+%%%%%%%%%% Color Palette 1 %%%%%%%%%%%%%%%%
+%%color palette link: https://coolors.co/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226
+\definecolor{bs}{HTML}{005F73}
+\definecolor{rr}{HTML}{9b2226}
+\definecolor{rr2}{HTML}{da8c8f}
+\definecolor{mc}{HTML}{e9d8a6}
+\definecolor{bg}{HTML}{94D2BD}
+\definecolor{vg}{HTML}{0A9396}
+
+
+%%%%%%%%%% Color Palette 2 %%%%%%%%%%%%%%%%
+%%color palette link: https://coolors.co/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77
+\definecolor{yb}{HTML}{184E77}
+\definecolor{ke}{HTML}{52B69A}
+
+
+%%%%%%%%%% SECTION FORMAT %%%%%%%%%%%%%%%%%%%
+\titleformat{\section}
+%Font an color format of text and label.
+{\normalfont\Large\itshape\color{rr}}
+%Color of label.
+{\llap{\colorbox{bg}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}
+%Seperation between label and text
+{1em}
+{}% before the title body
+[]% after the title body
+
+%%%%%% SUBSECTION FORMAT %%%%%%%%%%%%%%%%%%%
+\titleformat{\subsection}%
+{\normalfont\large\itshape\color{rr2}}
+{\llap{\colorbox{bg}{\parbox{1.5cm}{\hfill\color{white}\thesubsection}}}}
+{1em}
+{}
+[]
+

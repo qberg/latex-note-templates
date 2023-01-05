@@ -1,0 +1,43 @@
+\documentclass{report}
+
+\input{premble.tex}
+\input{macros.tex}
+
+\title{\includegraphics[width=60mm]{images/guy_on_computer.png}\\[0.3cm]  
+       \textcolor{amethyst}{An Introduction to Algorithms}  \\[0.5cm]
+      --- \textcolor{palegreen}{Lecture Notes for MIT 6.006} ---}
+\author{Reneeth Krishna MG}
+\date{Fall 2011 \\[0.2cm]
+\begin{minipage}[t]{1.0\linewidth} 
+These lecture notes are based on the lectures by Prof. Erik Demaine and Prof. Srini Devadas and the resources for the same can be found for free at
+\href{https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/}{\texttt{MIT OCW}}.
+\end{minipage}
+}
+
+\makeindex
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%
+% TITLE
+%%%%%%%%%%%%%%%%%
+\maketitle
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%
+% SECTIONS
+%%%%%%%%%%%%%%%%%
+\include{lectures/lecture-01.tex}
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%%
+\bibliographystyle{alpha}
+\bibliography{cs}
+%%%%%%%%%%%%%%%%%%%
+
+\listoffigures
+\printindex
+
+\end{document}
